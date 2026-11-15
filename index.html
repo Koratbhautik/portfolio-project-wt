@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhautik Korat | Portfolio</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <!-- Fonts: Fraunces (editorial serif) + Outfit (clean sans) -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       NAVBAR
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+  <nav id="mainNav">
+    <div class="nav-wrap">
+
+      <a href="#home" class="nav-brand">
+        <div class="brand-logo-wrap">
+          <img src="lkkl.png" alt="BK" class="brand-logo" />
+        </div>
+        <span class="brand-name">Bhautik Korat</span>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home"      class="nm">Home</a></li>
+        <li><a href="#about"     class="nm">About</a></li>
+        <li><a href="#skills"    class="nm">Skills</a></li>
+        <li><a href="#projects"  class="nm">Projects</a></li>
+        <li><a href="#education" class="nm">Education</a></li>
+        <li><a href="#contact"   class="nm">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="cv.png" download="Bhautik_Korat_CV.png" class="cv-btn" id="cvDownloadBtn" title="Download CV">
+          <i class="bi bi-download"></i>
+          <span>Download CV</span>
+        </a>
+        <button id="darkBtn" class="icon-btn" title="Toggle theme">
+          <i class="bi bi-moon-fill" id="darkIcon"></i>
+        </button>
+        <button id="menuBtn" class="icon-btn ham-btn">
+          <i class="bi bi-list" id="hamIcon"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mob-menu" id="mobMenu">
+      <a href="#home"      class="mob-link">Home</a>
+      <a href="#about"     class="mob-link">About</a>
+      <a href="#skills"    class="mob-link">Skills</a>
+      <a href="#projects"  class="mob-link">Projects</a>
+      <a href="#education" class="mob-link">Education</a>
+      <a href="#contact"   class="mob-link">Contact</a>
+      <a href="cv.png" download="Bhautik_Korat_CV.png" class="mob-link mob-cv-link" id="mobCvDownloadBtn">
+        <i class="bi bi-download"></i> Download CV
+      </a>
+    </div>
+  </nav>
+
+  <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       HERO
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+  <section id="home" class="hero">
+    <div class="hero-bg-text" aria-hidden="true">BK</div>
+
+    <div class="hero-content">
+
+      <!-- Photo col -->
+      <div class="hero-photo-col" data-reveal>
+        <div class="hero-photo-frame">
+          <img src="0202.jpeg" alt="Bhautik Korat" class="hero-photo" />
+        </div>
+        <div class="hero-photo-info">
+          <span><i class="bi bi-geo-alt-fill"></i> Jetpur, Gujarat</span>
+          <span><i class="bi bi-mortarboard-fill"></i> JG University</span>
+        </div>
+      </div>
+
+      <!-- Text col -->
+      <div class="hero-text-col" data-reveal data-delay="120">
+        <div class="hero-top-chips">
+          <span class="pulse-chip"><span class="pdot"></span>Open to Opportunities</span>
+        </div>
+
+        <h1 class="hero-name">
+          Bhautik<br>
+          <span class="hero-name-serif">Korat</span>
+        </h1>
+
+        <p class="hero-typed" id="typedEl">&nbsp;</p>
+
+        <p class="hero-desc">
+          CSE student at <strong>JG University, Ahmedabad</strong>.
+          GTU Diploma with <strong>9.38 CGPA</strong>. I build IoT circuits,
+          write clean code, and edit cinematic reels &amp; brand promos.
+          Always building. Always learning.
+        </p>
+
+        <!-- Quick stat row -->
+        <div class="hero-stats">
+          <div class="hs-item">
+            <span class="hs-val">9.38</span>
+            <span class="hs-key">CGPA</span>
+          </div>
+          <div class="hs-sep"></div>
+          <div class="hs-item">
+            <span class="hs-val">3</span>
+            <span class="hs-key">Projects</span>
+          </div>
+          <div class="hs-sep"></div>
+          <div class="hs-item">
+            <span class="hs-val">8+</span>
+            <span class="hs-key">Skills</span>
+          </div>
+          <div class="hs-sep"></div>
+          <div class="hs-item">
+            <span class="hs-val">3</span>
+            <span class="hs-key">Languages</span>
+          </div>
+        </div>
+
+        <div class="hero-btns">
+          <a href="#projects" class="btn-primary">View Projects <i class="bi bi-arrow-right"></i></a>
+          <a href="#contact"  class="btn-outline">Contact Me</a>
+        </div>
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       ABOUT
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+  <section id="about" class="section" style="padding-top:110px;">
+    <div class="container">
+
+      <div class="sec-header" data-reveal>
+        <span class="sec-eyebrow">01 — About Me</span>
+        <h2 class="sec-title">Who I Am</h2>
+      </div>
+
+      <div class="about-layout">
+
+        <div class="about-copy" data-reveal>
+          <p>
+            I'm a <strong>B.Tech Computer Science & Engineering</strong> student at
+            <strong>JG University, Ahmedabad</strong> (2026 batch). Before this, I completed
+            my Diploma in Computer Engineering from <strong>OM Institute of Engineering &
+            Technology</strong> under <strong>GTU</strong> with a <strong>9.38 CGPA</strong>.
+          </p>
+          <p>
+            My work lives at the intersection of hardware and software. I've built
+            <strong>Eric</strong> — a Python-based voice command application — and a
+            <strong>fingerprint biometric lock</strong> with Arduino from scratch.
+            Outside code, I cut cinematic reels and edit brand promos using
+            CapCut and Premiere Pro.
+          </p>
+          <p>Three things drive me: <em>curiosity, craft, and consistency.</em></p>
+
+          <div class="lang-row">
+            <div class="lang-pill"><span class="lp-code">En</span><div><b>English</b><small>Professional</small></div></div>
+            <div class="lang-pill"><span class="lp-code">हि</span><div><b>Hindi</b><small>Native</small></div></div>
+            <div class="lang-pill"><span class="lp-code">ગુ</span><div><b>Gujarati</b><small>Proficient</small></div></div>
+          </div>
+        </div>
+
+        <div class="about-cards" data-reveal data-delay="120">
+          <div class="about-stat-card">
+            <div class="asc-val">9.38</div>
+            <div class="asc-lbl">Diploma CGPA</div>
+          </div>
+          <div class="about-stat-card">
+            <div class="asc-val">3</div>
+            <div class="asc-lbl">Real Projects</div>
+          </div>
+          <div class="about-stat-card">
+            <div class="asc-val"><i class="bi bi-cpu-fill"></i></div>
+            <div class="asc-lbl">IoT & Hardware</div>
+          </div>
+          <div class="about-stat-card">
+            <div class="asc-val">3</div>
+            <div class="asc-lbl">Languages Spoken</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       SKILLS  (Tech + Non-Tech together)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+  <section id="skills" class="section sec-alt">
+    <div class="container">
+
+      <div class="sec-header" data-reveal>
+        <span class="sec-eyebrow">02 — Skills</span>
+        <h2 class="sec-title">What I Work With</h2>
+      </div>
+
+      <!-- ── TECHNICAL ── -->
+      <div class="skills-group" data-reveal>
+        <div class="sg-label">Technical Skills</div>
+        <div class="sg-grid">
+
+          <div class="sk-card">
+            <div class="sk-card-icon"><i class="bi bi-braces-asterisk"></i></div>
+            <h5 class="sk-card-title">Programming</h5>
+            <div class="tag-row">
+              <span>C++</span><span>C</span><span>Python</span><span>Java</span>
+              <span>SQL</span><span>HTML</span><span>CSS</span><span>Bootstrap</span>
+            </div>
+          </div>
+
+          <div class="sk-card">
+            <div class="sk-card-icon"><i class="bi bi-tools"></i></div>
+            <h5 class="sk-card-title">Tools & Platforms</h5>
+            <div class="tag-row">
+              <span>Git</span><span>GitHub</span><span>VS Code</span><span>Arduino IDE</span>
+            </div>
+          </div>
+
+          <div class="sk-card">
+            <div class="sk-card-icon"><i class="bi bi-lightbulb-fill"></i></div>
+            <h5 class="sk-card-title">CS Concepts</h5>
+            <div class="tag-row">
+              <span>OOP</span><span>Web Development</span><span>AI / ML</span>
+              <span>DSA Basics</span><span>Design Thinking</span>
+            </div>
+          </div>
+
+          <div class="sk-card">
+            <div class="sk-card-icon"><i class="bi bi-cpu-fill"></i></div>
+            <h5 class="sk-card-title">Hardware & IoT</h5>
+            <div class="tag-row">
+              <span>Arduino Uno</span><span>R307S Sensor</span>
+              <span>Solenoid Lock</span><span>Circuit Design</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ── NON-TECHNICAL ── -->
+      <div class="skills-group mt-5" data-reveal data-delay="80">
+        <div class="sg-label">Non-Technical Skills</div>
+
+        <div class="editing-block">
+
+          <!-- Dark left panel -->
+          <div class="eb-left">
+            <span class="eb-eyebrow">Creative</span>
+            <h3 class="eb-title">Video<br/>Editing</h3>
+            <p class="eb-quote">"The same precision I use in C++ I bring to every cut and grade."</p>
+            <div class="eb-tools">
+              <span>CapCut</span>
+              <span>Premiere Pro</span>
+              <span>Lightroom</span>
+            </div>
+          </div>
+
+          <!-- Right grid of skill cards -->
+          <div class="eb-right">
+
+            <div class="esk-card">
+              <i class="bi bi-scissors esk-icon"></i>
+              <div class="esk-name">Cuts &amp; Pacing</div>
+              <div class="esk-desc">Dynamic edits, rhythm-matched cuts for reels &amp; shorts</div>
+            </div>
+
+            <div class="esk-card">
+              <i class="bi bi-music-note-beamed esk-icon"></i>
+              <div class="esk-name">Beat Sync</div>
+              <div class="esk-desc">Music-driven transitions &amp; motion timing</div>
+            </div>
+
+            <div class="esk-card">
+              <i class="bi bi-palette-fill esk-icon"></i>
+              <div class="esk-name">Colour Grading</div>
+              <div class="esk-desc">Cinematic tones, LUTs &amp; correction in Lightroom &amp; Premiere Pro</div>
+            </div>
+
+            <div class="esk-card">
+              <i class="bi bi-collection-play-fill esk-icon"></i>
+              <div class="esk-name">Brand Promos</div>
+              <div class="esk-desc">Motion overlays, text animations &amp; promo edits</div>
+            </div>
+
+            <div class="esk-card">
+              <i class="bi bi-instagram esk-icon"></i>
+              <div class="esk-name">Social Media Edits</div>
+              <div class="esk-desc">Instagram Reels, WhatsApp Status &amp; Shorts</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       PROJECTS
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+  <section id="projects" class="section">
+    <div class="container">
+
+      <div class="sec-header" data-reveal>
+        <span class="sec-eyebrow">03 — Projects</span>
+        <h2 class="sec-title">What I've Built</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="proj-card" data-reveal>
+          <div class="proj-card-top">
+            <div class="proj-num">01</div>
+            <div class="proj-status live">● Live</div>
+          </div>
+          <div class="proj-icon-big"><i class="bi bi-fingerprint"></i></div>
+          <h3 class="proj-title">Biometric Security System</h3>
+          <p class="proj-date">April 2026 – Present</p>
+          <p class="proj-desc">
+            High-security locking system using Arduino Uno and R307S Fingerprint Sensor
+            with TIP122 transistor logic. C++ programmed for fast authentication and
+            optimized 12V DC power delivery.
+          </p>
+          <div class="proj-tags">
+            <span>C++</span><span>Arduino</span><span>IoT</span><span>Hardware</span>
+          </div>
+          <ul class="proj-points">
+            <li>Arduino Uno + R307S Fingerprint Sensor</li>
+            <li>12V Solenoid Lock + TIP122 transistor</li>
+            <li>Fast C++ authentication logic</li>
+          </ul>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="proj-card" data-reveal data-delay="120">
+          <div class="proj-card-top">
+            <div class="proj-num">02</div>
+            <div class="proj-status done">✔ Completed</div>
+          </div>
+          <div class="proj-icon-big"><i class="bi bi-robot"></i></div>
+          <h3 class="proj-title">Eric — Voice Assistant</h3>
+          <p class="proj-date">Nov 2025 – Jan 2026</p>
+          <p class="proj-desc">
+            Python-based desktop voice assistant that listens to voice commands,
+            processes them and responds with relevant actions. Built with a
+            clean interface and efficient response logic.
+          </p>
+          <div class="proj-tags">
+            <span>Python</span><span>Voice</span><span>Automation</span><span>Desktop App</span>
+          </div>
+          <ul class="proj-points">
+            <li>Voice command recognition & processing</li>
+            <li>Python core logic with automation modules</li>
+            <li>Efficient response algorithms</li>
+          </ul>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="proj-card" data-reveal data-delay="200">
+          <div class="proj-card-top">
+            <div class="proj-num">03</div>
+            <div class="proj-status done">✔ Completed</div>
+          </div>
+          <div class="proj-icon-big"><i class="bi bi-code-slash"></i></div>
+          <h3 class="proj-title">Personal Portfolio Website</h3>
+          <p class="proj-date">2026</p>
+          <p class="proj-desc">
+            Fully responsive portfolio website built from scratch using HTML, CSS,
+            Bootstrap 5 and JavaScript. Features dark mode, scroll animations,
+            form validation and a clean professional design.
+          </p>
+          <div class="proj-tags">
+            <span>HTML</span><span>CSS</span><span>Bootstrap</span><span>JavaScript</span>
+          </div>
+          <ul class="proj-points">
+            <li>Responsive layout — mobile, tablet, desktop</li>
+            <li>Dark / light mode with localStorage</li>
+            <li>JS form validation & scroll animations</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       EDUCATION
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+  <section id="education" class="section sec-alt">
+    <div class="container">
+
+      <div class="sec-header" data-reveal>
+        <span class="sec-eyebrow">04 — Education</span>
+        <h2 class="sec-title">Academic Journey</h2>
+      </div>
+
+      <!-- Horizontal stepper cards -->
+      <div class="edu-stepper" data-reveal>
+
+        <!-- SSC -->
+        <div class="edu-step">
+          <div class="edu-step-icon">
+            <i class="bi bi-book-fill"></i>
+          </div>
+          <div class="edu-step-line"></div>
+          <div class="edu-step-card">
+            <div class="edu-step-year">2022</div>
+            <span class="edu-step-badge badge-score">81%</span>
+            <h4 class="edu-step-degree">SSC — 10th Grade</h4>
+            <div class="edu-step-field">General (GSEB Board)</div>
+            <div class="edu-step-inst"><i class="bi bi-building"></i> Lions High School, Jetpur</div>
+            <div class="edu-step-chips">
+              <span>GSEB</span>
+              <span class="chip-gold">81%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Diploma -->
+        <div class="edu-step">
+          <div class="edu-step-icon edu-step-icon--brown">
+            <i class="bi bi-mortarboard-fill"></i>
+          </div>
+          <div class="edu-step-line"></div>
+          <div class="edu-step-card edu-step-card--featured">
+            <div class="edu-step-year">2023 – 2026</div>
+            <span class="edu-step-badge badge-cgpa">9.38 CGPA ★</span>
+            <h4 class="edu-step-degree">Diploma in Computer Engineering</h4>
+            <div class="edu-step-field">Computer Engineering</div>
+            <div class="edu-step-inst"><i class="bi bi-building"></i> OM Institute of Eng. & Technology</div>
+            <div class="edu-step-inst"><i class="bi bi-mortarboard"></i> GTU</div>
+            <div class="edu-step-chips">
+              <span>Computer Engg.</span>
+              <span>GTU</span>
+              <span class="chip-gold">9.38 CGPA</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- B.Tech -->
+        <div class="edu-step">
+          <div class="edu-step-icon edu-step-icon--accent">
+            <i class="bi bi-stars"></i>
+          </div>
+          <div class="edu-step-card edu-step-card--ongoing">
+            <div class="edu-step-year">2026 – 2029</div>
+            <span class="edu-step-badge badge-ongoing">● Ongoing</span>
+            <h4 class="edu-step-degree">B.Tech — Computer Science & Engineering</h4>
+            <div class="edu-step-field">CSE</div>
+            <div class="edu-step-inst"><i class="bi bi-building"></i> JG University, Ahmedabad</div>
+            <div class="edu-step-chips">
+              <span>B.Tech CSE</span>
+              <span class="chip-gold">2026 Batch</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       CONTACT
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+  <section id="contact" class="section">
+    <div class="container">
+
+      <div class="sec-header" data-reveal>
+        <span class="sec-eyebrow">05 — Contact</span>
+        <h2 class="sec-title">Get In Touch</h2>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-info" data-reveal>
+          <p class="ci-text">
+            Have a project, collaboration, or just want to say hello?
+            Fill in the form and I'll get back to you.
+          </p>
+          <div class="ci-row"><i class="bi bi-geo-alt-fill"></i><span>Jetpur, Rajkot, Gujarat</span></div>
+          <div class="ci-row"><i class="bi bi-mortarboard-fill"></i><span>JG University, Ahmedabad</span></div>
+          <div class="ci-row"><i class="bi bi-camera-reels-fill"></i><span>Available for edit projects</span></div>
+          <div class="ci-row"><i class="bi bi-robot"></i><span>Open for IoT & coding collaborations</span></div>
+        </div>
+
+        <div class="contact-form-wrap" data-reveal data-delay="100">
+          <form id="contactForm" novalidate>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label class="cf-label">Name</label>
+                <input type="text" id="fname" class="cf-input" placeholder="Your name" required />
+                <div class="cf-err" id="fnameErr">Please enter your name.</div>
+              </div>
+              <div class="col-sm-6">
+                <label class="cf-label">Email</label>
+                <input type="email" id="femail" class="cf-input" placeholder="you@email.com" required />
+                <div class="cf-err" id="femailErr">Enter a valid email.</div>
+              </div>
+              <div class="col-12">
+                <label class="cf-label">Subject</label>
+                <input type="text" id="fsubject" class="cf-input" placeholder="Project / Edit / Collab" required />
+                <div class="cf-err" id="fsubjectErr">Please enter a subject.</div>
+              </div>
+              <div class="col-12">
+                <label class="cf-label">Message</label>
+                <textarea id="fmessage" class="cf-input cf-area" rows="5" placeholder="Tell me about your idea..." required></textarea>
+                <div class="cf-err" id="fmessageErr">Please write a message.</div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn-primary w-100">Send Message <i class="bi bi-send-fill ms-2"></i></button>
+              </div>
+            </div>
+            <div id="fSuccess" class="cf-success d-none"><i class="bi bi-check-circle-fill"></i> Message sent! I'll reply soon.</div>
+            <div id="fError"   class="cf-error-box d-none"><i class="bi bi-exclamation-circle-fill"></i> Fill all fields correctly.</div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       FOOTER
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="lkkl.png" alt="BK Logo" class="footer-logo" />
+          <span class="footer-name">Bhautik Korat</span>
+        </div>
+        <p class="footer-sub">CSE Student · IoT Developer · Video Editor</p>
+        <p class="footer-copy">Built with HTML, CSS, Bootstrap & JavaScript &nbsp;·&nbsp; © 2026</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
